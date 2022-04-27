@@ -1,38 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  height: 100vh;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: linear-gradient(
+  345deg,
+  hsl(240deg 100% 50%) 0%,
+  hsl(246deg 100% 55%) 5%,
+  hsl(249deg 100% 58%) 10%,
+  hsl(250deg 99% 61%) 15%,
+  hsl(251deg 99% 63%) 20%,
+  hsl(252deg 99% 65%) 25%,
+  hsl(253deg 98% 67%) 30%,
+  hsl(253deg 98% 69%) 35%,
+  hsl(253deg 97% 71%) 40%,
+  hsl(254deg 96% 73%) 45%,
+  hsl(253deg 95% 75%) 50%,
+  hsl(253deg 94% 77%) 55%,
+  hsl(253deg 92% 79%) 60%,
+  hsl(251deg 90% 81%) 65%,
+  hsl(250deg 87% 82%) 70%,
+  hsl(248deg 83% 84%) 75%,
+  hsl(244deg 78% 86%) 80%,
+  hsl(238deg 72% 88%) 85%,
+  hsl(230deg 67% 89%) 90%,
+  hsl(218deg 60% 89%) 95%,
+  hsl(200deg 53% 90%) 100%
+);
 }
