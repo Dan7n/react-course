@@ -31,7 +31,7 @@ export const Calculator = () => {
 
     const handleSubtract = () => {
         if (!currentResult && !prevResult) return
-        setPrevResult(result => Number(result) - Number(currentResult));
+        setPrevResult(result => Number(result) !== 0 ? Number(result) - Number(currentResult) : Number(currentResult));
         setCurrentResult("");
         setOperator("-");
     }
@@ -47,7 +47,7 @@ export const Calculator = () => {
                 setIsOperationFinished(true)
                 break;
             case "-":
-                setCurrentResult(result => Number(result) + Number(prevResult));
+                setCurrentResult(result => Number(prevResult) - Number(result));
                 setPrevResult("");
                 setOperator("");
                 setIsOperationFinished(true)
