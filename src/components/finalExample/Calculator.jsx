@@ -90,6 +90,13 @@ export const Calculator = () => {
 	);
 };
 
+const CalculatorBody = styled.main`
+    display: grid;
+    grid-template-rows: repeat(5, 4.4rem) 3rem;
+    grid-template-columns: repeat(4, 4.2rem);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+`
+
 const CalculatorScreen = styled.section`
     grid-column: 1 / -1;
     grid-row: span 1;
@@ -113,12 +120,6 @@ const FinalResultDisplay = styled(CurrentResultDisplay)`
     `
 
 
-const CalculatorBody = styled.main`
-    display: grid;
-    grid-template-rows: repeat(5, 4.2rem) 3rem;
-    grid-template-columns: repeat(4, 3.5rem);
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-`
 
 const NormalButton = styled.button`
     border: 0.5px solid #6b7280;
